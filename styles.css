@@ -45,7 +45,7 @@ body {
   }
 
   .image img {
-    width: 100%;
+    width: 50%;
     height: auto;
     transition: transform 0.3s ease; /* Adiciona transição suave */
   }
@@ -53,4 +53,6 @@ body {
   .image img:hover {
     transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% quando o mouse está sobre ela */
   }
+  
+
   
