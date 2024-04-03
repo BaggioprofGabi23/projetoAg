@@ -63,5 +63,34 @@ const chart2 = new Chart(ctx2, {
     }
   }
 });
-
+const questions = [
+    { question: 'Qual é a principal causa do aquecimento global?', answer: 'greenhouse' },
+    { question: 'Qual das seguintes atividades contribui mais para a poluição do ar: transporte de veículos a combustão, queima de resíduos sólidos ou desmatamento?', answer: 'transport' },
+    { question: 'Qual é o principal objetivo do Acordo de Paris?', answer: 'paris' },
+    { question: 'Qual é a importância das florestas na regulação do clima global?', answer: 'forests' },
+    { question: 'Quais são os principais gases do efeito estufa?', answer: 'gases' },
+    { question: 'Qual é o impacto do aumento do nível do mar nas comunidades costeiras?', answer: 'sea_level' },
+    { question: 'Como a acidificação dos oceanos afeta os ecossistemas marinhos?', answer: 'acidification' },
+    { question: 'Quais são os efeitos do desmatamento na biodiversidade?', answer: 'biodiversity' },
+    { question: 'Quais são as fontes de energia consideradas renováveis?', answer: 'renewable_energy' },
+    { question: 'Como as mudanças climáticas estão afetando os padrões de precipitação em diferentes regiões do mundo?', answer: 'precipitation' }
+  ];
+  
+  // Função para exibir a próxima pergunta
+  function showNextQuestion() {
+    if (currentQuestionIndex < questions.length) {
+      const currentQuestion = questions[currentQuestionIndex];
+      document.getElementById('question').textContent = currentQuestion.question;
+      currentQuestionIndex++;
+    } else {
+      // Exibe a pontuação final quando não houver mais perguntas
+      questionContainer.style.display = 'none';
+      scoreContainer.style.display = 'block';
+      scoreDisplay.textContent = `Você acertou ${score} de ${questions.length} perguntas.`;
+    }
+  }
+  
+  // Mostra a primeira pergunta quando a página é carregada
+  showNextQuestion();
+  
   
