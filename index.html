@@ -1,45 +1,4 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meio Ambiente e Aquecimento Global</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Meio Ambiente e Aquecimento Global</h1>
-  </header>
-  <main>
-    <section id="info">
-      <h2>O que é o Aquecimento Global?</h2>
-      <p>O aquecimento global é o aumento da temperatura média da Terra devido à emissão de gases do efeito estufa, como o dióxido de carbono, na atmosfera.</p>
-      <p>Esse fenômeno tem impactos significativos no meio ambiente, incluindo o derretimento das calotas polares, elevação do nível do mar e mudanças nos padrões climáticos.</p>
-      <p>É crucial tomar medidas para reduzir as emissões de gases do efeito estufa e mitigar os efeitos do aquecimento global.</p>
-    </section>
-      <section id="images">
-        <h2>Imagens Relacionadas</h2>
-        <div class="image">
-            <img src="florestas.jpg" alt="Floresta">
-            <canvas id="chart1" width="200" height="100"></canvas>
-            <p>Floresta tropical</p>
-          </div>
-        <div class="image">
-          <img src="iceberg.jpg" alt="Iceberg" class="zoomable">
-          <p>Derretimento de iceberg devido ao aquecimento global</p>
-        </div>
-      </section>
-    
-    </section>
-    <button id="darkModeBtn">Ativar Modo Escuro</button>
-  </main>
-  <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-</body>
-</html>
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -53,25 +12,41 @@
   </header>
   <main>
     <section id="quiz">
-      <div id="questionContainer">
-        <h2 id="question"></h2>
-        <form id="quizForm">
-          <input type="radio" name="answer" value="greenhouse" id="greenhouse">
-          <label for="greenhouse">Emissão de gases de efeito estufa</label><br>
-          <input type="radio" name="answer" value="deforestation" id="deforestation">
-          <label for="deforestation">Desmatamento</label><br>
-          <input type="radio" name="answer" value="plastic" id="plastic">
-          <label for="plastic">Uso de plástico</label><br>
-          <input type="submit" value="Responder">
-        </form>
-      </div>
-      <div id="scoreContainer" style="display: none;">
-        <h2>Sua pontuação:</h2>
-        <p id="score"></p>
-      </div>
+      <!-- Seu conteúdo do quiz aqui -->
+    </section>
+        <section id="texto">
+            <p><strong>Meio Ambiente e o Aquecimento Global: Desafios e Soluções</strong></p>
+
+<p>O meio ambiente é o nosso lar, o palco onde toda a vida na Terra se desenrola. No entanto, nas últimas décadas, temos testemunhado uma série de mudanças preocupantes que ameaçam a estabilidade e a saúde do nosso planeta. Uma dessas ameaças mais significativas é o fenômeno conhecido como aquecimento global.
+
+O aquecimento global refere-se ao aumento da temperatura média da Terra, um fenômeno impulsionado principalmente pela emissão de gases do efeito estufa na atmosfera. Esses gases, como o dióxido de carbono (CO2), o metano (CH4) e o óxido nitroso (N2O), são liberados principalmente pela queima de combustíveis fósseis, desmatamento, agricultura intensiva e outras atividades humanas.
+
+As consequências do aquecimento global são vastas e abrangentes. O derretimento das calotas polares e das geleiras resulta na elevação do nível do mar, ameaçando comunidades costeiras e ecossistemas vulneráveis. Mudanças nos padrões climáticos levam a eventos climáticos extremos, como tempestades mais intensas, secas prolongadas e ondas de calor mortais. A biodiversidade está sob pressão, com espécies enfrentando extinção devido à perda de habitat e mudanças nas condições ambientais.
+
+No entanto, nem tudo está perdido. Existem soluções e medidas que podemos adotar para enfrentar o desafio do aquecimento global e proteger nosso meio ambiente. A transição para fontes de energia renovável, como solar e eólica, pode reduzir significativamente as emissões de gases do efeito estufa. A conservação de florestas e ecossistemas naturais desempenha um papel crucial na captura de carbono e na preservação da biodiversidade. A adoção de práticas agrícolas sustentáveis e a redução do desperdício de alimentos podem ajudar a mitigar os impactos ambientais da produção de alimentos.
+
+Além disso, a conscientização e a ação individuais são fundamentais. Pequenas mudanças em nosso estilo de vida, como reduzir o consumo de energia, reciclar e optar por transporte sustentável, podem ter um impacto positivo significativo quando adotadas em escala global.
+
+O meio ambiente e o aquecimento global são questões urgentes que exigem cooperação internacional e esforços coordenados em todos os níveis da sociedade. Ao reconhecer os desafios que enfrentamos e tomar medidas para enfrentá-los, podemos garantir um futuro sustentável para as gerações futuras e proteger o incrível e delicado equilíbrio da vida em nosso planeta.</p>
+        </section>
+    <section id="imagens">
+        <div class="image">
+            <img src="florestas.jpg" alt="Floresta">
+            <canvas id="chart1" width="200" height="100"></canvas>
+            <p>Floresta tropical</p>
+          </div>
+          
+          <div class="image">
+            <img src="iceberg.jpg" alt="Iceberg">
+            <canvas id="chart2" width="200" height="100"></canvas>
+            <p>Derretimento de iceberg devido ao aquecimento global</p>
+          </div>
+          
     </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
+
 
