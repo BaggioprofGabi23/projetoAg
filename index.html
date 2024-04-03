@@ -35,3 +35,35 @@
   <script src="script.js"></script>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Jogo - Quiz do Meio Ambiente</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mini Jogo - Quiz do Meio Ambiente</h1>
+  </header>
+  <main>
+    <section id="quiz">
+      <h2>Pergunta 1:</h2>
+      <p>Qual é a principal causa do aquecimento global?</p>
+      <form id="quizForm">
+        <input type="radio" name="answer" value="greenhouse" id="greenhouse">
+        <label for="greenhouse">Emissão de gases de efeito estufa</label><br>
+        <input type="radio" name="answer" value="deforestation" id="deforestation">
+        <label for="deforestation">Desmatamento</label><br>
+        <input type="radio" name="answer" value="plastic" id="plastic">
+        <label for="plastic">Uso de plástico</label><br>
+        <input type="submit" value="Responder">
+      </form>
+      <p id="result"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
