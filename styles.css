@@ -43,9 +43,14 @@ body {
     flex: 0 0 50%;
     padding: 10px;
   }
-  
+
   .image img {
     width: 100%;
     height: auto;
+    transition: transform 0.3s ease; /* Adiciona transição suave */
+  }
+  
+  .image img:hover {
+    transform: scale(1.1); /* Aumenta o tamanho da imagem em 10% quando o mouse está sobre ela */
   }
   
