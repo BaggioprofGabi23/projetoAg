@@ -50,20 +50,25 @@
   </header>
   <main>
     <section id="quiz">
-      <h2>Pergunta 1:</h2>
-      <p>Qual é a principal causa do aquecimento global?</p>
-      <form id="quizForm">
-        <input type="radio" name="answer" value="greenhouse" id="greenhouse">
-        <label for="greenhouse">Emissão de gases de efeito estufa</label><br>
-        <input type="radio" name="answer" value="deforestation" id="deforestation">
-        <label for="deforestation">Desmatamento</label><br>
-        <input type="radio" name="answer" value="plastic" id="plastic">
-        <label for="plastic">Uso de plástico</label><br>
-        <input type="submit" value="Responder">
-      </form>
-      <p id="result"></p>
+      <div id="questionContainer">
+        <h2 id="question"></h2>
+        <form id="quizForm">
+          <input type="radio" name="answer" value="greenhouse" id="greenhouse">
+          <label for="greenhouse">Emissão de gases de efeito estufa</label><br>
+          <input type="radio" name="answer" value="deforestation" id="deforestation">
+          <label for="deforestation">Desmatamento</label><br>
+          <input type="radio" name="answer" value="plastic" id="plastic">
+          <label for="plastic">Uso de plástico</label><br>
+          <input type="submit" value="Responder">
+        </form>
+      </div>
+      <div id="scoreContainer" style="display: none;">
+        <h2>Sua pontuação:</h2>
+        <p id="score"></p>
+      </div>
     </section>
   </main>
   <script src="script.js"></script>
 </body>
 </html>
+
