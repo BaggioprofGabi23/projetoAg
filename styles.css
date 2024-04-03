@@ -78,30 +78,42 @@ body {
     padding: 20px;
   }
   
-  #quiz {
-    max-width: 500px;
-    margin: 0 auto;
+  body {
+    font-family: Arial, sans-serif;
   }
   
-  h2 {
-    margin-bottom: 10px;
+  header {
+    text-align: center;
   }
   
-  form {
-    margin-bottom: 20px;
+  h1 {
+    font-size: 24px;
+    margin: 20px 0;
   }
   
-  input[type="submit"] {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+  #game {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
   }
   
-  input[type="submit"]:hover {
-    background-color: #0056b3;
+  .row {
+    display: flex;
   }
+  
+  .cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+  }
+  
+  .player {
+    background-color: #ff0000; /* Cor do jogador (urso polar) */
+  }
+  
+  .iceberg {
+    background-color: #00ffff; /* Cor do iceberg */
+  }
+  
   
   body {
     font-family: 'Arial', sans-serif;
